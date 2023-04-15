@@ -4,9 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Buscar Github | Perfil de Usuarios</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="//i.postimg.cc/6QsMLj9v/kq1OaGP.png" type="image/x-png">
 </head>
 <body>
-    Hello !
+    <main>
+        <section>
+            <h1><i class="fa-brands fa-github"></i> Buscar Github</h1>
+                <input type="text" id="github-search" class="form-control" placeholder="Busca tu usuario">
+                <button id="github-action-search" class="btn btn-danger"><i class="fa-solid fa-magnifying-glass"></i> Buscar</button>
+        </section>
+
+        <section>
+            <div class="profile">
+                <div class="profile__photo">
+                    <img id="img-profile" src="//pbs.twimg.com/media/EmUM83TXIAAss5k.png">
+                </div>
+                <div class="profile__stats">
+                    <div class="profile__stats-content">
+                        <h3 id="github-name"></h3>
+                        <h4 id="github-username"></h3>
+                        <div class="profile__stats-content-count">
+                            <div>
+                                <h6 id="github-repos"></h6>
+                                <p>Repositorios</p>
+                            </div>
+                            <div>
+                                <h6 id="github-followers"></h6>
+                                <p>Seguidores</p>
+                            </div>
+                            <div>
+                                <h6 id="github-following"></h6>
+                                <p>Seguidos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="widgets">
+                <div class="widgets__social">
+                    <p id="github-location"></p>
+                    <p id="github-email"></p>
+                    <p id="github-company"></p>
+                    <p id="github-bio"></p>
+                </div>
+                <div class="widgets__logins">
+                    <p id="github-twitter"></p> 
+                    <p id="github-blog"></p>
+                    <p id="github-updated"></p>
+                    <p id="github-joined"></p>
+                </div>
+            </div>
+            
+            <div id="list-repos"></div>
+        </section>
+
+        <img class="watermark" src="https://i.postimg.cc/655XZhcc/t4hC3AV.png">
+        <!-- <div style="border:1px solid red; display: inline-block; padding: 2px 5px; margin:auto;">josebalcon</div> -->
+    </main>
+
+    <script src="./script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
